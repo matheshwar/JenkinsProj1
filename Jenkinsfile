@@ -1,4 +1,10 @@
-pipeline{
+pipeline {
     agent any
-    
+    stages {
+        stage('setup') {
+            steps {
+                bat 'npm run build'
+            }
+        }
+    }
 }
