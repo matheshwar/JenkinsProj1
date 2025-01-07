@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('setups') {
             steps {
-                bat 'npm run build'
+                bat 'npm run buildaa'
             }
         }
     }
