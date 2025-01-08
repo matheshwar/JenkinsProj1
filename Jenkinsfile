@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('setup') {
+        stage('setupA') {
             steps {
-                bat 'npm run buildaa'
+                bat 'npm run build'
             }
         }
         stage('Install Dependencies') {
