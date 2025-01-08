@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('setupA') {
+        stage('setup') {
             steps {
                 bat 'npm run build'
             }
