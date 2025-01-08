@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Install Dependencies') {
+        stage('Install Dependencis') {
             steps {
                 script {
                     // Ensure npm is installed
