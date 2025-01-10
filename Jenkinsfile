@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install pip') {
             steps {
-                sh 'sudo apt-get update && sudo apt-get install python3-pip'
+                sh 'apt-get update && apt-get install python3-pip'
             }
         }
         stage('Install Dependencies') {
