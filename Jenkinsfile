@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Install Dependencies') {
+        stage('Install Dependenciees') {
             steps {
                 sh 'npm install -r requirements.txt'
             }
