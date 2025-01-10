@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Install Dependenciees') {
+        stage('Install Dependencies') {
             steps {
-                sh 'npm install -r requirements.txt'
+                sh 'pip install -r requirements.txt'
             }
         }
         stage('Build Application') {
@@ -17,4 +17,7 @@ pipeline {
                 sh 'npm run test'
             }
         }
+       
     }
+
+}
